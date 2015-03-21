@@ -1,5 +1,4 @@
 # Machine Setup
-___
 Automated setup of developer/leisure machine based almost wholey on brew, brew cask and dot files.
 ###Disclaimer
 This script is best used on a fresh osx machine and will likely go out of date at some point.

@@ -90,6 +90,7 @@ apps=(
   rstudio
   keepassx
   fitbit-connect
+  adium
 )
 
 # Install apps to /Applications

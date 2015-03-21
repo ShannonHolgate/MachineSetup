@@ -90,7 +90,6 @@ apps=(
   rstudio
   keepassx
   fitbit-connect
-  adium
 )
 
 # Install apps to /Applications
@@ -122,12 +121,14 @@ echo "alias zshconfig='subl ~/.zshrc'"
 echo "alias envconfig='subl ~/Projects/config/env.sh'"
 echo "alias hackdev='subl ~/Developer'"
 echo "plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)"
+echo "[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh"
 
 echo "ZSH_THEME=pygmalion" >> ~/.zshrc
 echo "alias zshconfig='subl ~/.zshrc'" >> ~/.zshrc
 echo "alias envconfig='subl ~/Projects/config/env.sh'" >> ~/.zshrc
 echo "alias hackdev='subl ~/Developer'" >> ~/.zshrc
 echo "plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)" >> ~/.zshrc
+echo "[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh" >> ~./zshrc
 
 echo ""
 echo "Now running ./osx-for-shannon.sh"
